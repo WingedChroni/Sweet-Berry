@@ -120,9 +120,16 @@
     width: 130px;
     height: 48px;
     border-radius: 28px;
-    background-color: var(--primary);
-    color: white;
+    font-family: "Roboto";
     font-size: 16px;
+    font-weight: 500;
+    /* background-color: var(--primary);
+    color: white; */
+    font-size: 16px;
+  }
+
+  bg_white{
+    background-color: white;
   }
   
   .absolute{
@@ -146,43 +153,16 @@
 
   /* header styling */
   header{
-    display:grid;
     grid-column: span 4;
-    grid-template-areas:
-    "navlink logo hide";
-    
     height:100px;   
   }
 
-  header img{
-    grid-area:logo;
-    justify-self: center;
-    align-self: center;
-    
-  }
-
- 
-  .fa-bars{
-    font-size: 0;
+  i {
+    position: absolute;
+    display: hidden;
     visibility: collapse;
-    flex-basis: 0;
-    width: 0;
   }
 
-  nav{
-    min-width: 125px;    
-    font-family: "Roboto";
-    font-size: 16px;
-    font-weight: 500;
-    grid-area:navlink;
-    justify-self: center;
-    
-  }
-
-  #replace{
-    grid-area:hide;
-    justify-self: center;
-  }
   /* Slogan Styling */
 
   h1{
