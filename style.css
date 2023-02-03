@@ -123,9 +123,7 @@
     font-family: "Roboto";
     font-size: 16px;
     font-weight: 500;
-    /* background-color: var(--primary);
-    color: white; */
-    font-size: 16px;
+   
   }
 
   bg_white{
@@ -140,24 +138,28 @@
   
   /* Container Styling */
   #container {
-    width: 90%;
+    /* width: 90%; */
     margin: 0 auto;
     display: grid;
-    justify-items: center;
     /* grid-gap: 50px; */
     
     grid-template-areas: 
     "header header header"
     "banner banner banner"
-    "option option option";
+    "option option option"
+    "footer footer footer";
   }
 
   /* header styling */
   header{  
+    width: 90%;
+    margin: 0 auto;
     grid-area:header;
-    height:100px; 
-    background-color: aqua;
-
+    height:100px;
+  }
+  
+  header img{
+    justify-self: center;    
   }
 
   /* i {
@@ -180,9 +182,14 @@
     max-width: 600px;
   }
 
+  #slogan img{
+    width:60%;
+  }
+
   #slogan{
+    width: 90%;
     gap: 80px;
-    margin: 80px 0;
+    margin: 80px auto;
     grid-area:banner;
   }
   
@@ -192,7 +199,8 @@
 
   /* Options Styling */
   #options{
-    margin: 10% 0;
+    width: 90%;
+    margin: 10% auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -224,6 +232,7 @@
   /* Footer Styling */
   footer{
     height:80px;
+    grid-area:footer;
   }
 /* 
  @media screen and (max-width: 768px){
