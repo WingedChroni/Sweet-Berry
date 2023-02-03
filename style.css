@@ -164,11 +164,13 @@
     height: 48px;
     border-radius: 28px;
   }
-  /* i {
+
+  i {
     position: absolute;
+    font-size: 48px;
     display: hidden;
     visibility: collapse;
-  } */
+  }
 
   /* Slogan Styling */
 
@@ -233,7 +235,6 @@
 
   /* Footer Styling */
   footer{
-    /* height:80px; */
     grid-area:footer;
     padding: 4%;
   }
@@ -262,33 +263,32 @@
 
  @media screen and (max-width: 390px){
     header a{
-        position: absolute;
-        display: none;
-        visibility: collapse;
+      position: absolute;
+      display: none;
+      visibility: collapse;
     }
-    .fa-bars{
-        font-size: 48px;
-        visibility: visible;
-        justify-self: center;
-      }
+    i {
+      visibility: visible;
+      position: relative;
+    }
 
     #options{
-        grid-template: repeat(6, 1fr)/auto;
-        margin-top: 10%;
-        margin-bottom: 10%;
-        row-gap: 3%;
-        align-content: center;
+      grid-template: repeat(6, 1fr)/auto;
+      margin-top: 10%;
+      margin-bottom: 10%;
+      row-gap: 3%;
+      align-content: center;
     }
 
     #options h2{
-        font-size:24px;
+      font-size:24px;
     }
 
     .card{
-        width: 100%
+      width: 100%
     }
     
     footer{
-        padding: 10%;
+      padding: 10%;
     }
  } 
