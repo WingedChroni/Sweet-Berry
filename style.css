@@ -1,9 +1,10 @@
+/* css reset */
 *{
     margin: 0;
     box-sizing:border-box;
     padding: 0;
   }
-  
+  /* Design Tokens? */
   html, body {
     height: 100%;
     width: 100%;
@@ -129,15 +130,13 @@
   
   .absolute{
     position: absolute;
-    top: -40px;
+    top: -44px;
     right: 48px;
   }
   
   /* Container Styling */
   #container {
-    margin: 0 auto;
     display: grid;
-    
     grid-template-areas: 
     "header header header"
     "banner banner banner"
@@ -152,17 +151,21 @@
     grid-area:header;
     height:100px;
   }
-  
+
+  nav{
+    gap: 6vw;
+  }
+
   header img{
     justify-self: center;    
   }
   
-  header a:last-of-type{
+  #login{
     width: 130px;
     height: 48px;
     border-radius: 28px;
   }
-
+/* FontAwesome Hamburger */
   i {
     position: absolute;
     font-size: 48px;
@@ -235,18 +238,22 @@
     grid-area:footer;
     padding: 4%;
   }
-
+/* First Resize */
  @media screen and (max-width: 768px){
-    nav{
-        flex-basis: 10%;
-    }
     #slogan{
-        flex-direction: column;
-        text-align: center;
+      flex-direction: column;
+      text-align: center;
+      gap: 0;
     }
+
+    #motto {
+      align-items: center;
+    }
+
     #slogan img{
         width: 100%  
     }
+
     #options{
         grid-template: repeat(3,1fr)/1fr 1fr;
         margin-bottom: 20%;
@@ -264,23 +271,28 @@
       display: none;
       visibility: collapse;
     }
+
     i {
       visibility: visible;
       position: relative;
     }
 
+    #slogan h1{
+      font-size: 48px;
+    }
+
     #options{
-      grid-template: repeat(6, 1fr)/auto;
+      grid-template: auto repeat(5, 1fr)/auto;
       margin-top: 10%;
       margin-bottom: 10%;
-      row-gap: 3%;
+      row-gap: 64px;
       align-content: center;
     }
 
     #options h2{
       font-size:24px;
     }
-
+    
     .card{
       width: 100%
     }
