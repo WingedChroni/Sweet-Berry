@@ -135,10 +135,8 @@
   
   /* Container Styling */
   #container {
-    /* width: 90%; */
     margin: 0 auto;
     display: grid;
-    /* grid-gap: 50px; */
     
     grid-template-areas: 
     "header header header"
@@ -173,7 +171,13 @@
   }
 
   /* Slogan Styling */
-
+   #slogan{
+    width: 90%;
+    gap: 80px;
+    margin: 5% auto;
+    grid-area:banner;
+  }
+  
   h1{
     font-size:64px;
     margin-bottom: 32px;
@@ -188,13 +192,6 @@
 
   #slogan img{
     width:60%;
-  }
-
-  #slogan{
-    width: 90%;
-    gap: 80px;
-    margin: 5% auto;
-    grid-area:banner;
   }
   
   #motto{
@@ -241,7 +238,7 @@
 
  @media screen and (max-width: 768px){
     nav{
-        flex-basis: 15%;
+        flex-basis: 10%;
     }
     #slogan{
         flex-direction: column;
