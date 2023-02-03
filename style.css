@@ -143,6 +143,7 @@
     width: 90%;
     margin: 0 auto;
     display: grid;
+    justify-items: center;
     /* grid-gap: 50px; */
     
     grid-template-areas: 
@@ -152,16 +153,18 @@
   }
 
   /* header styling */
-  header{
-    grid-column: span 4;
-    height:100px;   
+  header{  
+    grid-area:header;
+    height:100px; 
+    background-color: aqua;
+
   }
 
-  i {
+  /* i {
     position: absolute;
     display: hidden;
     visibility: collapse;
-  }
+  } */
 
   /* Slogan Styling */
 
@@ -189,11 +192,11 @@
 
   /* Options Styling */
   #options{
-    margin: 40px 0;
+    margin: 10% 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 80px 40px;
+    gap: 5% 2%;
     grid-area:option;
   }
 
@@ -222,7 +225,7 @@
   footer{
     height:80px;
   }
-
+/* 
  @media screen and (max-width: 768px){
     nav{
         flex-basis: 20%;
@@ -292,4 +295,4 @@
     footer{
         height: 60px;
     }
- }
+ } */
