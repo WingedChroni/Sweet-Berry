@@ -129,7 +129,7 @@
   
   .absolute{
     position: absolute;
-    top: -40px;
+    top: -44px;
     right: 48px;
   }
   
@@ -240,13 +240,22 @@
     nav{
         flex-basis: 10%;
     }
+
     #slogan{
-        flex-direction: column;
-        text-align: center;
+      flex-direction: column;
+      text-align: center;
+      gap:0;
     }
+
+    #motto {
+      align-items: center;
+    }
+
+
     #slogan img{
         width: 100%  
     }
+
     #options{
         grid-template: repeat(3,1fr)/1fr 1fr;
         margin-bottom: 20%;
@@ -269,11 +278,15 @@
       position: relative;
     }
 
+    #slogan p{
+      margin-bottom: 0;
+    }
+
     #options{
-      grid-template: repeat(6, 1fr)/auto;
+      grid-template: auto repeat(5, 1fr)/auto;
       margin-top: 10%;
       margin-bottom: 10%;
-      row-gap: 3%;
+      row-gap: 64px;
       align-content: center;
     }
 
