@@ -21,6 +21,7 @@
   
   a {
     text-decoration: none;
+    color: var(--primary);
   }
   
   h1, h2, h3 {
@@ -117,13 +118,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 130px;
-    height: 48px;
-    border-radius: 28px;
     font-family: "Roboto";
     font-size: 16px;
     font-weight: 500;
-   
   }
 
   bg_white{
@@ -161,7 +158,12 @@
   header img{
     justify-self: center;    
   }
-
+  
+  header a:last-of-type{
+    width: 130px;
+    height: 48px;
+    border-radius: 28px;
+  }
   /* i {
     position: absolute;
     display: hidden;
@@ -189,7 +191,7 @@
   #slogan{
     width: 90%;
     gap: 80px;
-    margin: 80px auto;
+    margin: 5% auto;
     grid-area:banner;
   }
   
@@ -200,11 +202,11 @@
   /* Options Styling */
   #options{
     width: 90%;
-    margin: 10% auto;
+    margin: 8% auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 5% 2%;
+    gap: 10% 2%;
     grid-area:option;
   }
 
@@ -231,43 +233,38 @@
 
   /* Footer Styling */
   footer{
-    height:80px;
+    /* height:80px; */
     grid-area:footer;
+    padding: 4%;
   }
-/* 
+
  @media screen and (max-width: 768px){
     nav{
-        flex-basis: 20%;
+        flex-basis: 15%;
     }
     #slogan{
         flex-direction: column;
         text-align: center;
     }
     #slogan img{
-        width: 80%
-      
+        width: 100%  
     }
     #options{
         grid-template: repeat(3,1fr)/1fr 1fr;
-        margin-bottom: 80px;
-        gap: 72px 24px;
+        margin-bottom: 20%;
+        gap: 5% 2%;
     }
     .card{
         width: 90%;
-        
-        /* padding:32px; */
     }
  }
 
 
  @media screen and (max-width: 390px){
-    /* not hiding? */
-    nav{
-        /* display: none; */
+    header a{
+        position: absolute;
+        display: none;
         visibility: collapse;
-    }
-    #hide{
-      visibility: collapse;
     }
     .fa-bars{
         font-size: 48px;
@@ -275,20 +272,12 @@
         justify-self: center;
       }
 
-    #slogan img{
-        width: 50%;
-        
-    }
-
     #options{
-        grid-template: repeat(6, 1fr)/ auto;
-        gap: 64px 0;
+        grid-template: repeat(6, 1fr)/auto;
+        margin-top: 10%;
+        /* margin-bottom: 10%; */
+        gap: 3%;
         align-content: center;
-    }
-
-    #options div:first-child{
-        width: 60%
-        
     }
 
     #options h2{
@@ -296,12 +285,10 @@
     }
 
     .card{
-        width: 60%
-        
-        /* padding:24px; */
+        width: 100%
     }
     
     footer{
-        height: 60px;
+        padding: 10%;
     }
- } */
+ } 
