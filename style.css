@@ -1,4 +1,5 @@
 /* css reset */
+/* The CSS failed the CSS validator test */
 *{
     margin: 0;
     box-sizing:border-box;
@@ -24,7 +25,7 @@
     text-decoration: none;
     color: var(--primary);
   }
-  
+  /* Nice work on using the correct font for the correct element! */
   h1, h2, h3 {
     font-family: "Roboto-Serif";
     
@@ -135,6 +136,7 @@
   }
   
   /* Container Styling */
+  /* Great work on using grid-template-areas! It is one of the points of the rubrid! */
   #container {
     display: grid;
     grid-template-areas: 
@@ -239,6 +241,7 @@
     padding: 4%;
   }
 /* First Resize */
+/* Amazing work on making the webpage fully responsive!! */
  @media screen and (max-width: 768px){
     #slogan{
       flex-direction: column;
@@ -264,7 +267,7 @@
     }
  }
 
-
+ /* Great work on making the hamburger icon appear on mobile devices but it’s not a functional hamburger menu because when I click on it, the menu doesn't pop up. */
  @media screen and (max-width: 390px){
     header a{
       position: absolute;
@@ -301,3 +304,5 @@
       padding: 10%;
     }
  } 
+
+ /* Overall, beautiful work! You did amazing! You should be proud of yourself!🙌 */
